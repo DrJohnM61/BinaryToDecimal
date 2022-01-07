@@ -1,7 +1,7 @@
 # BinaryToDecimal
 Prints a binary held number as a decimal just using logical functions
 
-This code was inspired by the description from Ben Eater on how to turn a binary integer number into a decimal output
+This code was inspired by the description from Ben Eater on how to turn a binary integer number into a decimal output (see https://youtu.be/v3-a-zqKfgA)
 
 I know that this seems trivial, you just use a print function, right?
 
