@@ -8,12 +8,12 @@
 //
 //				remainder = number - ((int(number/10))*10)
 //
-// This would give the low order decimal and you could place thsi on a stack and repeat until no more digits. Then output the stack.
+// This would give the low order decimal and you could place this on a stack and repeat until no more digits. Then output the stack.
 // The issue with this is that the divide is a complex action to implement in logic gates. This code attempots to do the same thing 
 // in effect by using long division by using bit shifting and subtraction.
 //
 // As C does not explicity allow access to the carry flag, I implement this by using a 64 bit word that is split into two 32 bit words.
-// The low order (bit 1) of the left word is used as the carry for the substraction as the right word is rotated into the elft word of the
+// The low order (bit 1) of the left word is used as the carry for the substraction as the right word is rotated into the left word of the
 // original number.
 //
 //  Created by John Maton on 15th October 2020
