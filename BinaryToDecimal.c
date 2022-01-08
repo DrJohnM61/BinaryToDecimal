@@ -4,16 +4,16 @@
 // This was inspired by the description from Ben Eater
 //  
 // The problem that this code is trying to solve, is how do you get decimal digits from a binary number.
-// Computers store numbers in binary form. Efectivly, you could devide the number by 10 and find the remainder:
+// Computers store numbers in binary form. Effectively, you could divide the number by 10 and find the remainder:
 //
 //				remainder = number - ((int(number/10))*10)
 //
 // This would give the low order decimal and you could place this on a stack and repeat until no more digits. Then output the stack.
-// The issue with this is that the divide is a complex action to implement in logic gates. This code attempots to do the same thing 
+// The issue with this is that the divide is a complex action to implement in logic gates. This code attempts to do the same thing
 // in effect by using long division by using bit shifting and subtraction.
 //
-// As C does not explicity allow access to the carry flag, I implement this by using a 64 bit word that is split into two 32 bit words.
-// The low order (bit 1) of the left word is used as the carry for the substraction as the right word is rotated into the left word of the
+// As C does not explicitly allow access to the carry flag, I implement this by using a 64 bit word that is split into two 32 bit words.
+// The low order (bit 1) of the left word is used as the carry for the subtraction as the right word is rotated into the left word of the
 // original number.
 //
 //  Created by John Maton on 15th October 2020
